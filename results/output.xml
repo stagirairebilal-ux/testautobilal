@@ -1,57 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-03T11:24:16.266924" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-05T10:28:52.158128" rpa="false" schemaversion="5">
 <suite id="s1" name="PythonProjet" source="C:\Users\bilal\Documents\PythonProjet">
 <suite id="s1-s1" name="Testgoogle" source="C:\Users\bilal\Documents\PythonProjet\testgoogle.robot">
-<test id="s1-s1-t1" name="nouveau projet" line="24">
+<test id="s1-s1-t1" name="lancer google" line="7">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-03T11:24:18.153377" level="INFO">Opening browser 'chrome' to base url 'https://billetterie.fcnantes.com/fr/'.</msg>
+<msg time="2026-02-05T10:28:52.650463" level="INFO">Opening browser 'chrome' to base url 'https://www.ecoledirecte.com/login?cameFrom=%2FAccueil'.</msg>
+<arg>https://www.ecoledirecte.com/login?cameFrom=%2FAccueil</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-05T10:28:52.649571" elapsed="5.888695"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-05T10:28:58.541157" level="INFO">Typing text 'Bilal' into text field 'id=username'.</msg>
+<msg time="2026-02-05T10:28:58.556059" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.110)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6aae3f3d5
+	0x7ff6aae3f430
+	0x7ff6aabe10bd
+	0x7ff6aabb7c22
+	0x7ff6aac6d2a6
+	0x7ff6aac89652
+	0x7ff6aac2cb0c
+	0x7ff6aac2da53
+	0x7ff6ab11b470
+	0x7ff6ab11586d
+	0x7ff6ab13621a
+	0x7ff6aae5b235
+	0x7ff6aae63a5c
+	0x7ff6aae48844
+	0x7ff6aae489f6
+	0x7ff6aae2eb87
+	0x7ffbdd1be8d7
+	0x7ffbdd98c53c
+</msg>
+<msg time="2026-02-05T10:28:58.573976" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.110)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6aae3f3d5
+	0x7ff6aae3f430
+	0x7ff6aabe10bd
+	0x7ff6aabb7c22
+	0x7ff6aac6d2a6
+	0x7ff6aac89652
+	0x7ff6aac2cb0c
+	0x7ff6aac2da53
+	0x7ff6ab11b470
+	0x7ff6ab11586d
+	0x7ff6ab13621a
+	0x7ff6aae5b235
+	0x7ff6aae63a5c
+	0x7ff6aae48844
+	0x7ff6aae489f6
+	0x7ff6aae2eb87
+	0x7ffbdd1be8d7
+	0x7ffbdd98c53c
+</msg>
+<arg>id=username</arg>
+<arg>Bilal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-05T10:28:58.539140" elapsed="0.060493">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.110)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6aae3f3d5
+	0x7ff6aae3f430
+	0x7ff6aabe10bd
+	0x7ff6aabb7c22
+	0x7ff6aac6d2a6
+	0x7ff6aac89652
+	0x7ff6aac2cb0c
+	0x7ff6aac2da53
+	0x7ff6ab11b470
+	0x7ff6ab11586d
+	0x7ff6ab13621a
+	0x7ff6aae5b235
+	0x7ff6aae63a5c
+	0x7ff6aae48844
+	0x7ff6aae489f6
+	0x7ff6aae2eb87
+	0x7ffbdd1be8d7
+	0x7ffbdd98c53c
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>Abdoulaye</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-05T10:28:58.600716" elapsed="0.000427"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=connexion</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-05T10:28:58.602415" elapsed="0.000625"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-05T10:28:58.606616" elapsed="0.000589"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Identifiant ou Mot de passe invalide</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-05T10:28:58.608088" elapsed="0.000471"/>
+</kw>
+<status status="FAIL" start="2026-02-05T10:28:52.644023" elapsed="5.965753">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.110)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6aae3f3d5
+	0x7ff6aae3f430
+	0x7ff6aabe10bd
+	0x7ff6aabb7c22
+	0x7ff6aac6d2a6
+	0x7ff6aac89652
+	0x7ff6aac2cb0c
+	0x7ff6aac2da53
+	0x7ff6ab11b470
+	0x7ff6ab11586d
+	0x7ff6ab13621a
+	0x7ff6aae5b235
+	0x7ff6aae63a5c
+	0x7ff6aae48844
+	0x7ff6aae489f6
+	0x7ff6aae2eb87
+	0x7ffbdd1be8d7
+	0x7ffbdd98c53c
+</status>
+</test>
+<test id="s1-s1-t2" name="entrer dans le site" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-05T10:28:58.633796" level="INFO">Opening browser 'chrome' to base url 'https://www.ecoledirecte.com/login?cameFrom=%2FAccueil'.</msg>
+<arg>https://www.ecoledirecte.com/login?cameFrom=%2FAccueil</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-05T10:28:58.632666" elapsed="3.899333"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-05T10:29:02.533926" level="INFO">Typing text 'Bilal1706' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>Bilal1706</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-05T10:29:02.532883" elapsed="0.200707"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-05T10:29:02.735327" level="INFO">Typing text 'BA1706!!' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>BA1706!!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-05T10:29:02.734231" elapsed="0.235633"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-05T10:29:02.971410" level="INFO">Clicking button 'id=connexion'.</msg>
+<arg>id=connexion</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-05T10:29:02.970559" elapsed="0.196216"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-05T10:29:07.169403" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-05T10:29:03.167453" elapsed="4.003107"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-05T10:29:07.172030" level="INFO">Clicking button 'user-account-link'.</msg>
+<msg time="2026-02-05T10:29:07.493012" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-05T10:29:07.494069" level="FAIL">Button with locator 'user-account-link' not found.</msg>
+<arg>user-account-link</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-05T10:29:07.171082" elapsed="0.329138">Button with locator 'user-account-link' not found.</status>
+</kw>
+<status status="FAIL" start="2026-02-05T10:28:58.623630" elapsed="8.877118">Button with locator 'user-account-link' not found.</status>
+</test>
+<test id="s1-s1-t3" name="nouveau projet" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-05T10:29:07.510851" level="INFO">Opening browser 'chrome' to base url 'https://billetterie.fcnantes.com/fr/'.</msg>
 <arg>https://billetterie.fcnantes.com/fr/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-03T11:24:18.150492" elapsed="7.532999"/>
+<status status="PASS" start="2026-02-05T10:29:07.510088" elapsed="2.366363"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-03T11:24:32.694858" level="INFO">Slept 7 seconds.</msg>
+<msg time="2026-02-05T10:29:16.880523" level="INFO">Slept 7 seconds.</msg>
 <arg>7s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-03T11:24:25.684288" elapsed="7.014305"/>
+<status status="PASS" start="2026-02-05T10:29:09.877468" elapsed="7.006852"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-03T11:24:32.703505" level="INFO">Clicking element '//a[@class="Accepter les cookies"]'.</msg>
-<msg time="2026-02-03T11:24:33.645030" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-02-03T11:24:33.646359" level="FAIL">Element with locator '//a[@class="Accepter les cookies"]' not found.</msg>
+<msg time="2026-02-05T10:29:16.886523" level="INFO">Clicking element '//a[@class="Accepter les cookies"]'.</msg>
+<msg time="2026-02-05T10:29:17.380435" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-05T10:29:17.381685" level="FAIL">Element with locator '//a[@class="Accepter les cookies"]' not found.</msg>
 <arg>//a[@class="Accepter les cookies"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-02-03T11:24:32.699739" elapsed="0.968871">Element with locator '//a[@class="Accepter les cookies"]' not found.</status>
+<status status="FAIL" start="2026-02-05T10:29:16.885102" elapsed="0.506142">Element with locator '//a[@class="Accepter les cookies"]' not found.</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2026-02-03T11:24:33.670843" elapsed="0.001683"/>
+<status status="NOT RUN" start="2026-02-05T10:29:17.391781" elapsed="0.000280"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
 <arg>//button[@class="nq-c-sideNav-trigger"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-02-03T11:24:33.673822" elapsed="0.000702"/>
+<status status="NOT RUN" start="2026-02-05T10:29:17.392374" elapsed="0.000210"/>
 </kw>
-<status status="FAIL" start="2026-02-03T11:24:18.137453" elapsed="15.538241">Element with locator '//a[@class="Accepter les cookies"]' not found.</status>
+<status status="FAIL" start="2026-02-05T10:29:07.506183" elapsed="9.886817">Element with locator '//a[@class="Accepter les cookies"]' not found.</status>
 </test>
 <doc>Simple example using SeleniumLibrary.</doc>
-<status status="FAIL" start="2026-02-03T11:24:16.682129" elapsed="17.016564"/>
+<status status="FAIL" start="2026-02-05T10:28:52.273741" elapsed="25.124427"/>
 </suite>
-<status status="FAIL" start="2026-02-03T11:24:16.330127" elapsed="17.379138"/>
+<status status="FAIL" start="2026-02-05T10:28:52.170121" elapsed="25.237262"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="PythonProjet" id="s1" pass="0" fail="1" skip="0">PythonProjet</stat>
-<stat name="Testgoogle" id="s1-s1" pass="0" fail="1" skip="0">PythonProjet.Testgoogle</stat>
+<stat name="PythonProjet" id="s1" pass="0" fail="3" skip="0">PythonProjet</stat>
+<stat name="Testgoogle" id="s1-s1" pass="0" fail="3" skip="0">PythonProjet.Testgoogle</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2026-02-05T10:28:58.556059" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.110)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6aae3f3d5
+	0x7ff6aae3f430
+	0x7ff6aabe10bd
+	0x7ff6aabb7c22
+	0x7ff6aac6d2a6
+	0x7ff6aac89652
+	0x7ff6aac2cb0c
+	0x7ff6aac2da53
+	0x7ff6ab11b470
+	0x7ff6ab11586d
+	0x7ff6ab13621a
+	0x7ff6aae5b235
+	0x7ff6aae63a5c
+	0x7ff6aae48844
+	0x7ff6aae489f6
+	0x7ff6aae2eb87
+	0x7ffbdd1be8d7
+	0x7ffbdd98c53c
+</msg>
 </errors>
 </robot>
