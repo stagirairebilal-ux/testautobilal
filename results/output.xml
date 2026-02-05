@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-03T11:24:16.266924" rpa="false" schemaversion="5">
+<suite id="s1" name="PythonProjet" source="C:\Users\bilal\Documents\PythonProjet">
+<suite id="s1-s1" name="Testgoogle" source="C:\Users\bilal\Documents\PythonProjet\testgoogle.robot">
+<test id="s1-s1-t1" name="nouveau projet" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-03T11:24:18.153377" level="INFO">Opening browser 'chrome' to base url 'https://billetterie.fcnantes.com/fr/'.</msg>
+<arg>https://billetterie.fcnantes.com/fr/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-03T11:24:18.150492" elapsed="7.532999"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-03T11:24:32.694858" level="INFO">Slept 7 seconds.</msg>
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-03T11:24:25.684288" elapsed="7.014305"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-03T11:24:32.703505" level="INFO">Clicking element '//a[@class="Accepter les cookies"]'.</msg>
+<msg time="2026-02-03T11:24:33.645030" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-03T11:24:33.646359" level="FAIL">Element with locator '//a[@class="Accepter les cookies"]' not found.</msg>
+<arg>//a[@class="Accepter les cookies"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-03T11:24:32.699739" elapsed="0.968871">Element with locator '//a[@class="Accepter les cookies"]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-03T11:24:33.670843" elapsed="0.001683"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@class="nq-c-sideNav-trigger"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-03T11:24:33.673822" elapsed="0.000702"/>
+</kw>
+<status status="FAIL" start="2026-02-03T11:24:18.137453" elapsed="15.538241">Element with locator '//a[@class="Accepter les cookies"]' not found.</status>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="FAIL" start="2026-02-03T11:24:16.682129" elapsed="17.016564"/>
+</suite>
+<status status="FAIL" start="2026-02-03T11:24:16.330127" elapsed="17.379138"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="PythonProjet" id="s1" pass="0" fail="1" skip="0">PythonProjet</stat>
+<stat name="Testgoogle" id="s1-s1" pass="0" fail="1" skip="0">PythonProjet.Testgoogle</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
